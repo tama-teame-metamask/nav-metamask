@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "mt";
+    src: url(../assets/fonts/EuclidCircularB-Regular-WebXL.woff2);
+}
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: "mt";
+}
+a{
+    text-decoration: none;
+}
+/* .logo{} */
+.parentContainer{
+    margin-top: 20px;
+}
+.menuLi{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menuLiItem{
+    margin-left: 20px;
+    font-weight: 600;
+}
+.mood{
+    display: flex;
+    align-items: center;
+}
+.Download{
+    padding: 10px 30px;
+    border-radius: 100px;
+    background: #037dd6;
+    color: white;
+    transition: .4s;
+}
+.Download:hover{
+    background: #0060a5;
+}

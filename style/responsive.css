@@ -5,7 +5,7 @@
     .mobileMenu{
         display: flex;
     }
-    .mobileDropDownMenu{
+    .mobileDropDownMenu:hover{
         /* display: block; */
     }
 }

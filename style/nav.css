@@ -130,6 +130,7 @@ body.Tdark{
   border-radius: 10px;
   cursor: pointer;
 }
+
 .mobileDropDownMenu{
   display: none;
   width: 95%;
@@ -186,4 +187,9 @@ body.Tdark{
 }
 .mobileDropDownMenuShow{
   display: block;
+}
+
+/*  */
+.mobileDropDownMenuDisplay{
+  display: none;
 }

@@ -1,44 +1,156 @@
 @font-face {
-    font-family: "mt";
-    src: url(../assets/fonts/EuclidCircularB-Regular-WebXL.woff2);
+  font-family: "mt";
+  src: url(../assets/fonts/EuclidCircularB-Regular-WebXL.woff2);
 }
-*{
-    margin: 0;padding: 0;box-sizing: border-box;
-    font-family: "mt";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "mt";
+  list-style: none;
 }
-a{
-    text-decoration: none;
-}
-/* .logo{} */
-.parentContainer{
-    margin-top: 20px;
-}
-.menuLi{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.menuLiItem{
-    margin-left: 20px;
-    font-weight: 600;
-}
-.mood{
-    display: flex;
-    align-items: center;
-}
-.Download{
-    padding: 10px 30px;
-    border-radius: 100px;
-    background: #037dd6;
-    color: white;
-    transition: .4s;
-}
-.Download:hover{
-    background: #0060a5;
+a {
+  text-decoration: none;
 }
 
-/* ========================== */
-.mobileMenu{
-    display: none;
-    margin-top: 20px;
+.parentContainer {
+  margin-top: 20px;
+}
+.menuLi {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menuLiItem {
+  margin-left: 20px;
+  font-weight: 600;
+  padding: 20px 0 10px 0;
+  position: relative;
+}
+
+.menuLiItem:hover span {
+  color: #037dd6;
+}
+.menuLiItemDropDown {
+  padding: 0 5px;
+  position: absolute;
+  top:  43px;
+  left: -25px;
+  width: max-content;
+  /* width: 170px; */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.menuLiItem:hover .menuLiItemDropDown{
+    display: block;
+}
+.menuLiItemDropDown:hover{
+    display: block;
+}
+.menuLiItemDropDown > li {
+  margin: 10px auto;
+  padding: 8px;
+  border-radius: 5px;
+  transition: linear .1s;
+}
+.menuLiItemDropDown > li:hover {
+    background-color: rgba(218, 218, 218, 0.4);
+    color: #037dd6;
+}
+.dropDownChild {
+}
+
+.mood {
+  display: flex;
+  align-items: center;
+}
+.Download {
+  padding: 10px 30px;
+  border-radius: 100px;
+  background: #037dd6;
+  color: white;
+  transition: 0.4s;
+}
+.Download:hover {
+  background: #0060a5;
+}
+
+/* ==================================================
+                      mobile menu
+=================================================== */
+.mobileMenu {
+  display: none;
+  margin-top: 20px;
+  /* display: flex; */
+  justify-content: space-between;
+}
+.logo{
+  margin-left: 10px;
+  width: 200px;
+}
+.hamIcon {
+  display: block;
+  width: fit-content;
+  transform: rotate(90deg);
+  font-weight: 900;
+  margin-right: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.mobileDropDownMenu{
+  display: none;
+  width: 95%;
+  margin: 10px auto;
+  height: max-content;
+}
+
+.mobileMenuTitle{
+  height: 30px;
+  cursor: pointer;
+}
+.mobileMenuTitle span{float: left;}
+.mobileMenuTitle:hover span{color: #037dd6;}
+.mobileMenuTitle img{float: right; padding-top: 5px;}
+.mobileMenuLiItemDropDown{
+  margin: 5px 0;
+  height: 0;
+  overflow: hidden;
+}
+.mobileDropDownChild{
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 5px;
+  transition: linear .1s;
+}
+.mobileDropDownChild:hover{
+  background-color: rgba(218, 218, 218, 0.4);
+  color: #037dd6;
+}
+.mobileDownloadCountainer{
+  margin: 20px auto;
+}
+.mobileDownload{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 100px;
+  background: #037dd6;
+  color: white;
+  transition: 0.4s;
+}
+.colorMood{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobileDropDownMenuShow{
+  display: block;
 }

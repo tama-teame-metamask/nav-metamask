@@ -5,6 +5,7 @@ const MDorpDown =document.querySelector('.mobileDropDownMenu')
 ham.addEventListener('click' , function(){
     MDorpDown.classList.toggle('mobileDropDownMenuShow')
 })
+
 acc.forEach(item => {
     item.addEventListener("click" , function(){
         item.classList.toggle('active')
@@ -16,3 +17,4 @@ acc.forEach(item => {
         }
     })
 })
+

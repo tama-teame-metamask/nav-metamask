@@ -2,6 +2,7 @@
   --text-color-dark-mood: #fff ;
   --bg-color-dark-mood: #121212 ;
   --shadow-dark : 0 0 15px rgba(255, 255, 255, 0.2) ;
+  --arshia-color-dark :#393e46 ;
 }
 @font-face {
   font-family: "mt";
@@ -22,6 +23,7 @@ body{
   --bg-color-mood: #fff ;
   --shadow- : 0 0 15px rgba(0, 0, 0, 0.2) ;
   --hover-color : #037dd6;
+  --arshia-color : #24292e;
   background: var(--bg-color-mood);
 }
 body.Tdark{
@@ -29,6 +31,7 @@ body.Tdark{
   --bg-color-mood: var(--bg-color-dark-mood);
   --shadow- :var(--shadow-dark) ;
   --hover-color : var(--text-color-dark-mood);
+  --arshia-color : var(--arshia-color-dark );
 }
 /* @media (prefers-color-scheme : dark){
   body.Tauto{
